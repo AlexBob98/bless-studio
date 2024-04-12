@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bless Studio - Детейлинг автомобилей в СПб</title>
-  <script defer src="bundle.js"></script></head>
+  <script defer src="bundle.js"></script><link href="main.css" rel="stylesheet"></head>
   <body>
     <div class="wrapper">
       <header class="header" id="header">
@@ -51,15 +51,16 @@
           <div class="banner-column">
             <div class="banner-block-img">
               <div class="slider-img">
-                <div class="banner-links" id="links-soc">
-                </div>
-                <img class="banner-image" src="images/slider/audi.png" alt="banner"/>
+                <div class="banner-links" id="links-soc"></div>
+                <img
+                  class="banner-image"
+                  src="images/slider/audi.png"
+                  alt="banner"
+                />
               </div>
             </div>
             <div class="banner-inner">
-              <h1 class="heading-xl">
-                Bless Studio
-              </h1>
+              <h1 class="heading-xl">Bless Studio</h1>
               <h3>Детейлинг автомобилей в СПб</h3>
               <p class="paragraph">
                 Полировка для блеска, полиуретановая оклейка для защиты,
@@ -75,23 +76,232 @@
         <section id="services" class="container services">
           <h2 class="services-text">Услуги</h2>
           <div id="services-block">
-            <div id="cards" class="cards-blocks"></div>
+            <div id="cards" class="cards-blocks">
+              <div class="card-block" id="0">
+                <div class="card-image" image-id="0">
+                  <img src="images/exterior.png" alt="Полировка" /><a
+                    class="btn-darken card-btn"
+                    ><i class="fa-brands fa-telegram"></i
+                  ></a>
+                </div>
+                <span class="card-text">Полировка</span
+                ><span class="card-desc"
+                  >Полировка лкп до максимально близкого к заводскому состоянию
+                  автомобиля</span
+                >
+              </div>
+              <div class="card-block" id="1">
+                <div class="card-image" image-id="1">
+                  <img src="images/interior.png" alt="Химчистка" /><a
+                    class="btn-darken card-btn"
+                    ><i class="fa-brands fa-telegram"></i
+                  ></a>
+                </div>
+                <span class="card-text">Химчистка</span
+                ><span class="card-desc"
+                  >Устранение большинства загрязнений и посторонних запахов из
+                  салона вашего авто</span
+                >
+              </div>
+              <div class="card-block" id="2">
+                <div class="card-image" image-id="2">
+                  <img src="images/ppf.png" alt="Антигравийная пленка" /><a
+                    class="btn-darken card-btn"
+                    ><i class="fa-brands fa-telegram"></i
+                  ></a>
+                </div>
+                <span class="card-text">Антигравийная пленка</span
+                ><span class="card-desc"
+                  >Защита кузова пленкой от сколов, царапин, притертостей и
+                  агрессивной химии</span
+                >
+              </div>
+              <div class="card-block" id="3">
+                <div class="card-image" image-id="3">
+                  <img src="images/ceramic.png" alt="Защита керамикой" /><a
+                    class="btn-darken card-btn"
+                    ><i class="fa-brands fa-telegram"></i
+                  ></a>
+                </div>
+                <span class="card-text">Защита керамикой</span
+                ><span class="card-desc"
+                  >Повышение насыщенности и яркости цвета автомобиля</span
+                >
+              </div>
+              <div class="card-block" id="4">
+                <div class="card-image" image-id="4">
+                  <img src="images/oklej.png" alt="Оклейка салона" /><a
+                    class="btn-darken card-btn"
+                    ><i class="fa-brands fa-telegram"></i
+                  ></a>
+                </div>
+                <span class="card-text">Оклейка салона</span
+                ><span class="card-desc"
+                  >Оклейка пленкой панели приборов, экрана мультимедии,
+                  центральной консоли.</span
+                >
+              </div>
+              <div class="card-block" id="5">
+                <div class="card-image" image-id="5">
+                  <img
+                    src="images/antichrome.png"
+                    alt="Оклейка винилом и антихром"
+                  /><a class="btn-darken card-btn"
+                    ><i class="fa-brands fa-telegram"></i
+                  ></a>
+                </div>
+                <span class="card-text">Оклейка винилом и антихром</span
+                ><span class="card-desc"
+                  >Оклейка виниловой пленкой кузова автомобиля и оклеивание
+                  хрома в цвет кузова</span
+                >
+              </div>
+            </div>
           </div>
         </section>
         <section class="container advantages">
           <h2 class="advantages-text">Наши Преимущества</h2>
           <div class="advantages-container">
             <div id="advantages" class="advantages-blocks">
-             
+              <div
+                class="advantages-block"
+                id="1"
+                data-tooltip="Предлагаем индивидуальный план обслуживания в зависимости от потребностей и желаний каждого клиента. Это позволяет достичь наилучших результатов"
+              >
+                <div class="advantages-block__icon">
+                  <img
+                    src="images/icons/individual.svg"
+                    alt="Индивидуальный подход"
+                  />
+                </div>
+                <div class="advantages-block__text">
+                  <p>Индивидуальный подход</p>
+                </div>
+              </div>
+              <div
+                class="advantages-block"
+                id="2"
+                data-tooltip="Широкий спектр услуг, охватывающий все аспекты ухода за автомобилем, включая внешний вид, салон, дополнительные услуги, такие как установка пленки"
+              >
+                <div class="advantages-block__icon">
+                  <img
+                    src="images/icons/complex.svg"
+                    alt="Комплексный спектр услуг"
+                  />
+                </div>
+                <div class="advantages-block__text">
+                  <p>Комплексный спектр услуг</p>
+                </div>
+              </div>
+              <div
+                class="advantages-block"
+                id="3"
+                data-tooltip="Особое внимание к деталям, чтобы обеспечить безупречный внешний вид и состояние автомобиля. Это включает в себя устранение даже мельчайших дефектов и загрязнений"
+              >
+                <div class="advantages-block__icon">
+                  <img
+                    src="images/icons/warning.svg"
+                    alt="Внимание к деталям"
+                  />
+                </div>
+                <div class="advantages-block__text">
+                  <p>Внимание к деталям</p>
+                </div>
+              </div>
+              <div
+                class="advantages-block"
+                id="4"
+                data-tooltip="Наши услуги детейлинга могут обеспечить долгосрочные результаты, сохраняя внешний вид и состояние автомобиля на высоком уровне на протяжении длительного времени"
+              >
+                <div class="advantages-block__icon">
+                  <img
+                    src="images/icons/longtime.svg"
+                    alt="Долгосрочные результаты"
+                  />
+                </div>
+                <div class="advantages-block__text">
+                  <p>Долгосрочные результаты</p>
+                </div>
+              </div>
+              <div
+                class="advantages-block"
+                id="5"
+                data-tooltip="Детейлинг может помочь поддерживать высокую стоимость автомобиля, так как он сохраняет оригинальное состояние и защищает его от повреждений"
+              >
+                <div class="advantages-block__icon">
+                  <img
+                    src="images/icons/expensive.svg"
+                    alt="Поддержание стоимости автомобиля"
+                  />
+                </div>
+                <div class="advantages-block__text">
+                  <p>Поддержание стоимости автомобиля</p>
+                </div>
+              </div>
+              <div
+                class="advantages-block"
+                id="6"
+                data-tooltip="Предлагаем уникальные опции и дополнительные услуги, такие как установка защитных пленок, обработка салона антисептиками и многое другое, что может придать вашему автомобилю особенное обаяние и функциональность"
+              >
+                <div class="advantages-block__icon">
+                  <img
+                    src="images/icons/option.svg"
+                    alt="Уникальные опции и доп услуги"
+                  />
+                </div>
+                <div class="advantages-block__text">
+                  <p>Уникальные опции и доп услуги</p>
+                </div>
+              </div>
+              <div
+                class="advantages-block"
+                id="7"
+                data-tooltip="Высококвалифицированные и опытные специалисты, которые обучены специфическим техникам и методам детейлинга. Гарантируем высокое качество и точность выполнения всех процедур"
+              >
+                <div class="advantages-block__icon">
+                  <img
+                    src="images/icons/professional.svg"
+                    alt="Профессиональное качество работы"
+                  />
+                </div>
+                <div class="advantages-block__text">
+                  <p>Профессиональное качество работы</p>
+                </div>
+              </div>
+              <div
+                class="advantages-block"
+                id="8"
+                data-tooltip="Следим за новейшими разработками и технологиями в индустрии, что позволяет предоставлять нашим клиентам самые передовые решения и продукты"
+              >
+                <div class="advantages-block__icon">
+                  <img
+                    src="images/icons/products.svg"
+                    alt="Продукты и технологии нового поколения"
+                  />
+                </div>
+                <div class="advantages-block__text">
+                  <p>Продукты и технологии нового поколения</p>
+                </div>
+              </div>
+              <div
+                class="advantages-block"
+                id="9"
+                data-tooltip="Детейлинг-центр позволяет вам сэкономить свое время, так как специалисты могут эффективно выполнить сложные и трудоемкие процедуры ухода за автомобилем"
+              >
+                <div class="advantages-block__icon">
+                  <img src="images/icons/economy.svg" alt="Экономия времени" />
+                </div>
+                <div class="advantages-block__text">
+                  <p>Экономия времени</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
         <section class="container photogallery">
           <h2 class="photogallery-text">Фотогалерея</h2>
           <div class="photogallery-container">
-            <div id="photogallery" class="photogallery-blocks">
-             
-            </div>
+            <div id="photogallery" class="photogallery-blocks"></div>
           </div>
         </section>
         <section class="container feedback" id="contacts">
@@ -99,15 +309,29 @@
           <div class="feedback-container">
             <div class="card" id="form">
               <label class="input">
-                <span class="input__label" >Ваше имя</span>
-                <input class="input__field forms" autocomplete="off" id="name" type="text" name="firstname" placeholder=" " />
+                <span class="input__label">Ваше имя</span>
+                <input
+                  class="input__field forms"
+                  autocomplete="off"
+                  id="name"
+                  type="text"
+                  name="firstname"
+                  placeholder=" "
+                />
                 <i class="fas fa-exclamation-circle failure-icon"></i>
                 <i class="far fa-check-circle success-icon"></i>
                 <div class="error"></div>
               </label>
               <label class="input">
-                <span class="input__label" >Ваш телефон</span>
-                <input class="input__field forms" autocomplete="off" id="telephone" type="text" name="telephone" placeholder=" " />
+                <span class="input__label">Ваш телефон</span>
+                <input
+                  class="input__field forms"
+                  autocomplete="off"
+                  id="telephone"
+                  type="text"
+                  name="telephone"
+                  placeholder=" "
+                />
                 <i class="fas fa-exclamation-circle failure-icon"></i>
                 <i class="far fa-check-circle success-icon"></i>
                 <div class="error"></div>
@@ -119,10 +343,10 @@
                   <i class="far fa-check-circle success-icon"></i>
                   <div class="error"></div>
                 </select>
-                
               </div>
               <div class="button-group">
-                <button id="send" class="button" disabled>Отправить
+                <button id="send" class="button" disabled>
+                  Отправить
                   <span id="send-spinner" class="loading-spinner"></span>
                 </button>
               </div>
@@ -133,9 +357,12 @@
           <h2 class="contact-text">Контакты</h2>
           <div class="contact-block">
             <div class="contact-form">
-              <img src="images/logo/bless-studio.png" alt="Bless Studio">
+              <img src="images/logo/bless-studio.png" alt="Bless Studio" />
               <p>Наш адрес:</p>
-              <p>г. Санкт-Петербург,<br> ул. Химиков 2 строение 2</p>
+              <p>
+                г. Санкт-Петербург,<br />
+                ул. Химиков 2 строение 2
+              </p>
               <p id="phone"></p>
             </div>
             <div class="contact-map" id="map"></div>
@@ -147,11 +374,11 @@
           <div class="footer-block__logo">
             <h4>Bless Studio</h4>
             <p>Детейлинг студия в г.Санкт-Петербург</p>
-            <img src="images/logo/bless-studio.png" alt="Bless Studio">
+            <img src="images/logo/bless-studio.png" alt="Bless Studio" />
           </div>
           <div class="footer-block__links">
             <h4>Навигация:</h4>
-            <ul >
+            <ul>
               <li>
                 <a href="#" class="menu-footer">Главная</a>
               </li>
