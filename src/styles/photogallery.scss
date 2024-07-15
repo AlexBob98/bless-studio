@@ -1,12 +1,76 @@
 .photogallery-blocks {
-    padding-bottom: 4em;
+  padding-bottom: 4em;
+  transition: opacity 0.5s ease-in-out;
+}
+.photogallery-container {
+  position: relative;
+}
+.hidden {
+  opacity: 0;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+  gap: 0.5em;
+  cursor: pointer;
+}
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #001f7a;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  animation: spin 2s linear infinite;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  display: none;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.pagination button.active {
+  background-color: #666c71;
+  color: white;
+  box-shadow: none;
+}
+.pagination button {
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  background: #000;
+  box-shadow: 1px 1px 11px #aeaeae;
+  cursor: pointer;
+}
+.photo-gallery-pagination:hover {
+  background: #303030;
+ }
 .grid-layout {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5em;
+  gap: 2.5em;
   padding: 0 6em;
   flex-wrap: wrap;
   @media only screen and (max-width: 1050px) {
@@ -21,11 +85,10 @@
     transition: all 0.6s ease-in-out;
     height: 230px;
     @media only screen and (max-width: 630px) {
-      
     }
   }
   img:hover {
     filter: grayscale(0);
-    box-shadow: 0px 1px 11px #0000008a ;
+    box-shadow: 0px 1px 11px #0000008a;
   }
 }
