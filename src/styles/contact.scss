@@ -1,0 +1,83 @@
+.contact-block {
+  position: relative;
+}
+.contact-form {
+  position: absolute;
+  top: 4em;
+  left: 4em;
+  z-index: 1;
+  background: #1c1c1f;
+  padding: 3em;
+  width: 25em;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  border: 3px solid #000;
+  box-shadow: 0.5rem 0.5rem 0 #000;
+  .phone {
+    font-size: 25px;
+    color: #fff;
+  }
+  @media only screen and (max-width: 630px) {
+    top: 1em;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    background: #1c1c1f;
+    padding: 1em;
+    width: 18em;
+    height: auto;
+    border: 0;
+    box-shadow: none;
+    .phone {
+      font-size: 18px;
+    }
+  }
+  img {
+    max-width: 130px;
+    padding-bottom: 2em;
+    @media only screen and (max-width: 630px) {
+      max-width: 100px;
+      padding-bottom: 0;
+    }
+  }
+  p:nth-child(2) {
+    font-size: 26px;
+    font-weight: bold;
+    padding: 0.3em 0;
+    border-bottom: 3px solid #001f7a;
+    @media only screen and (max-width: 630px) {
+      font-size: 15px;
+    }
+  }
+  p:nth-child(3) {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 25px 0;
+    @media only screen and (max-width: 630px) {
+      margin: 15px 0;
+      font-size: 15px;
+    }
+  }
+  p:nth-child(4) {
+    font-size: 23px;
+    text-align: center;
+    @media only screen and (max-width: 630px) {
+      font-size: 15px;
+    }
+  }
+}
+.contact-map {
+  height: 40em;
+  margin: 0 auto;
+}
+img.my-marker {
+  width: 300px;
+}
+ymaps canvas {
+  filter: grayscale(1);
+}

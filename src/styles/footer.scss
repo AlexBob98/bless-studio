@@ -1,0 +1,103 @@
+footer {
+  background: #0c0f13;
+  border-top: 3px solid #001f7a;
+  margin-top: 4em;
+  height: 100%;
+  position: relative;
+  h4 {
+    color: #d9d9da;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6px;
+  }
+  h4::before {
+    content: "";
+    width: 20%;
+    margin: 6px 0;
+    border-top: 3px solid #001f7a;
+    transition: all 0.5s ease-in-out;
+  }
+  .footer-block {
+    padding: 2em 4em;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    @media only screen and (max-width: 630px) {
+      flex-direction: column;
+      padding: 2em;
+      row-gap: 2em;
+    }
+    div {
+      width: 15em;
+    }
+    :hover {
+      h4::before {
+        width: 50%;
+      }
+    }
+    p {
+      color: #fff;
+      font-size: 8px;
+      letter-spacing: 0.7px;
+    }
+    &__logo {
+      img {
+        max-width: 100px;
+        margin-top: 1em;
+      }
+    }
+    &__social {
+      i {
+        padding-right: 15px;
+        font-size: 24px;
+        margin-top: 0.6em;
+        color: #757474;
+        transition: all 0.3s ease-in-out;
+      }
+      i:hover {
+        transform: scale(1.1);
+        color: #fff;
+      }
+    }
+    &__links ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.6em;
+    }
+    &__weblogo {
+      img {
+        margin: 0 auto;
+      }
+      svg {
+        width: 8em;
+        margin: 0 auto;
+        display: flex;
+        transition: all 0.5s ease-in-out;
+        @media only screen and (max-width: 630px) {
+          margin: 0;
+        }
+      }
+      :hover {
+        fill: #000;
+        cursor: pointer;
+      }
+    }
+    &__creator {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @media only screen and (max-width: 630px) {
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+    }
+  }
+  .menu-footer {
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+}

@@ -1,0 +1,298 @@
+// Header Section
+// $bg-img: url('./images/logo/bless-studio.png');
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  margin: 0 auto;
+  transition: all 0.35s ease;
+  @media only screen and (max-width: 630px) {
+    position: static;
+  }
+  &.on-scroll {
+    background: var(--color-black-300);
+    box-shadow: var(--shadow-medium);
+    .navbar {
+      height: 4rem;
+      @media only screen and (max-width: 630px) {
+        height: 12em;
+        transform: translateY(-100%);
+      }
+      .brand {
+        width: 5em;
+        height: 50px;
+      }
+    }
+    @media only screen and (max-width: 630px) {
+      transform: translateY(-32em);
+      height: 12em;
+      z-index: 9999;
+    }
+  }
+}
+.on-scroll ~ main > section > .banner-column {
+  padding-top: 5em;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 3.25rem;
+  max-width: 1366px;
+  height: 6rem;
+  margin: 0 auto;
+  padding: 0 3em;
+  background: #000;
+  border-bottom: 3px solid #001f7a;
+  @media only screen and (max-width: 1175px) {
+    justify-content: space-around;
+    column-gap: 1.85rem;
+    padding: 0 1em;
+  }
+  @media only screen and (max-width: 630px) {
+    .logo {
+      order: 0;
+    }
+    height: auto;
+    row-gap: 1em;
+    padding: 1.2em 1.5em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .address {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    line-height: 2em;
+    @media only screen and (max-width: 630px) {
+      order: 1;
+    }
+    i {
+      color: #d4b042;
+      padding-right: 6px;
+      font-size: 20px;
+    }
+    &:hover i {
+      color: #fff;
+      transition: all 0.4s;
+      transform: scale(1.1);
+    }
+    p {
+      color: #fff;
+    }
+  }
+  .telephone {
+    display: flex;
+    align-items: center;
+    line-height: 2em;
+    @media only screen and (max-width: 630px) {
+      order: 1;
+    }
+    i {
+      // color: #42d446;
+      font-size: 9px;
+      padding-right: 6px;
+      animation: pulse 2.5s linear infinite;
+    }
+    p {
+      color: #fff;
+    }
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.brand {
+  background: url("./images/icons/bless-logo.png") no-repeat;
+  background-size: contain;
+  height: 70px;
+  color: #fff0;
+  z-index: 555;
+  background-position: center;
+  @media only screen and (max-width: 630px) {
+    order: 1;
+    height: 50px;
+  }
+}
+.address,
+.telephone {
+  @media only screen and (max-width: 630px) {
+    background: #3a3a3a;
+    padding: 0.5em;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+  }
+}
+.menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 4rem 0 3rem;
+  overflow: hidden;
+  background-color: var(--color-black-300);
+  box-shadow: var(--shadow-medium);
+  transition: all 0.4s ease-in-out;
+  @media only screen and (max-width: 630px) {
+    top: -200%;
+    padding: 7rem 0 3rem;
+    z-index: 5;
+    background: #3a3a3a
+  }
+  &.is-active {
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.25rem;
+  }
+
+  &-link {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--color-white-100);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+
+  &-block {
+    display: inline-block;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25;
+    user-select: none;
+    white-space: nowrap;
+    text-align: center;
+    margin-left: auto;
+    padding: 0.65rem 1.5rem;
+    border-radius: 3rem;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: hsl(0deg 0% 0%);
+    box-shadow: var(--shadow-medium);
+    transition: all 0.3s ease-in-out;
+  }
+
+  // Media Query Breakpoint
+  @media only screen and (min-width: 1175px) {
+    position: relative;
+    top: 0;
+    width: auto;
+    height: auto;
+    padding: 0rem;
+    margin-left: auto;
+    background: none;
+    box-shadow: none;
+
+    &-inner {
+      display: flex;
+      flex-direction: row;
+      column-gap: 2rem;
+      margin: 0 auto;
+    }
+
+    &-link {
+      text-transform: capitalize;
+    }
+
+    &-block {
+      margin-left: 2rem;
+    }
+  }
+}
+
+.burger {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  order: 0;
+  z-index: 10;
+  width: 1.6rem;
+  height: 1.15rem;
+  border: none;
+  outline: none;
+  background: none;
+  visibility: visible;
+  transform: rotate(0deg);
+  transition: 0.35s ease;
+
+  // Media Query Breakpoint
+  @media only screen and (min-width: 1175px) {
+    display: none;
+    visibility: hidden;
+  }
+
+  &-line {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 1.75px;
+    border: none;
+    outline: none;
+    opacity: 1;
+    transform: rotate(0deg);
+    background-color: var(--color-white-100);
+    transition: 0.25s ease-in-out;
+
+    &:nth-child(1) {
+      top: 0px;
+    }
+    &:nth-child(2) {
+      top: 0.5rem;
+      width: 70%;
+    }
+    &:nth-child(3) {
+      top: 1rem;
+    }
+  }
+
+  &.is-active .burger-line {
+    &:nth-child(1) {
+      top: 0.5rem;
+      transform: rotate(135deg);
+    }
+    &:nth-child(2) {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &:nth-child(3) {
+      top: 0.5rem;
+      transform: rotate(-135deg);
+    }
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}

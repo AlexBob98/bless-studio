@@ -1,0 +1,218 @@
+.feedback {
+  background: #1c1c1f;
+  color: #fff;
+  .feedback-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5em;
+  }
+}
+#nameError {
+  background: #ff6767;
+  max-width: 100em;
+  margin: 10px 0;
+  color: #fff;
+  display: flex;
+  padding: 0.5em;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+#nameError.visible {
+  display: block;
+}
+.card {
+  background: #aeaeae;
+  width: 30em;
+  padding: 2em;
+  border: 3px solid #000;
+  box-shadow: 0.5rem 0.5rem 0 #000;
+  position: relative;
+  &--inverted {
+    --color-background: #000;
+    color: #dadada;
+    --color-shadow: #dadada;
+  }
+
+  &--accent {
+    --color-background: var(--color-signal);
+    --color-accent: var(--color-light);
+    color: var(--color-dark);
+  }
+
+  *:first-child {
+    margin-top: 0;
+  }
+}
+.error {
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  order: -2;
+  @media only screen and (max-width: 400px) {
+    font-size: 10px;
+    font-weight: bold;
+    color: #4e4e4e;
+  }
+}
+.input {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  i {
+    order: -1;
+  }
+  .success-icon {
+    color: #005300;
+  }
+  .failure-icon {
+    color: #ff4646;
+    padding-left: 5px
+  }
+  .success-icon,
+  .failure-icon {
+    opacity: 0;
+    display: none;
+  }
+  &__label {
+    order: -2;
+    transition: transform 120ms ease-in;
+    line-height: 1.2;
+    width: 100%;
+  }
+  &__field {
+    display: flex;
+    width: 100%;
+    border: 2px solid currentColor;
+    padding: 0.8em 0.5em;
+    margin: 1em 0;
+    color: currentColor;
+    background: transparent;
+    letter-spacing: 1px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    &:focus,
+    &:not(:placeholder-shown) {
+      & + .input__label {
+        transform: translate(10px, -45%) scale(0.8);
+        color: #fff;
+        background: #aeaeae;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus {
+      background-color: #000;
+      background: #000;
+      -webkit-text-fill-color: #000000;
+      -webkit-box-shadow: 0 0 0px 40rem #ffff inset;
+    }
+  }
+}
+
+.button-group {
+  margin-top: 1.5em;
+  @media only screen and (max-width: 400px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  button {
+    color: currentColor;
+    padding: 0.7em 1.5em;
+    // background: #00000059;
+    border: none;
+    width: 125px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    .loading-spinner{
+      position:relative;
+      display:block;
+    }
+    &[type="reset"] {
+      // background: var(--color-background);
+      font-weight: 200;
+    }
+    
+  }
+}
+
+
+.custom-select {
+  position: relative;
+
+  select {
+    appearance: none;
+    /* safari */
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 0.675em 0 0.675em 0.5em;
+    background-color: #aeaeae;
+    color: #fff;
+    border: 2px solid;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-size: 16px;
+  }
+}
+
+.custom-select::after {
+  --size: 0.3rem;
+  position: absolute;
+  content: "";
+  right: 1rem;
+  pointer-events: none;
+}
+
+.custom-select::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid #fff;
+  top: 45%;
+  transform: var(--boxAfter);
+}
+button + button {
+  margin-left: calc(var(--size-bezel) * 2);
+}
+.button.active {
+  background: rgb(0 0 0);
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+}
+
+.hidden {
+  display: none;
+}
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+.spinner {
+    min-height:36px;
+}
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-top-color: #333;
+  animation: spinner 1s linear infinite;
+}

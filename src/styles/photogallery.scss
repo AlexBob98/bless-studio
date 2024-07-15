@@ -1,0 +1,31 @@
+.photogallery-blocks {
+    padding-bottom: 4em;
+}
+
+.grid-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 0 6em;
+  flex-wrap: wrap;
+  @media only screen and (max-width: 1050px) {
+    padding: 0 1em;
+  }
+  @media only screen and (max-width: 400px) {
+    padding: 0 2em;
+  }
+  img {
+    filter: grayscale(1);
+    border-radius: 10px;
+    transition: all 0.6s ease-in-out;
+    height: 230px;
+    @media only screen and (max-width: 630px) {
+      
+    }
+  }
+  img:hover {
+    filter: grayscale(0);
+    box-shadow: 0px 1px 11px #0000008a ;
+  }
+}

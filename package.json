@@ -1,0 +1,45 @@
+{
+  "name": "bless-detailing",
+  "version": "1.0.0",
+  "description": "Car Detailing",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "fslightbox": "^3.4.1",
+    "html-webpack-plugin": "^5.5.3",
+    "imagemin-webp-webpack-plugin": "^3.3.6",
+    "imask": "^7.2.1",
+    "uglify-js": "^3.17.4",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.0.2",
+    "@eslint/js": "^9.1.1",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "globals": "^15.0.0",
+    "image-minimizer-webpack-plugin": "^4.0.0",
+    "imagemin": "^8.0.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^10.0.1",
+    "mini-css-extract-plugin": "^2.8.1",
+    "sass": "^1.64.1",
+    "sass-loader": "^13.3.2",
+    "sharp": "^0.33.3",
+    "style-loader": "^3.3.3",
+    "terser-webpack-plugin": "^5.3.10"
+  },
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
