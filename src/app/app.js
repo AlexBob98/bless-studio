@@ -2,7 +2,6 @@ import Header from "./head";
 import Hero from "./hero";
 import Uslugi from "./uslugi";
 import ImageGallery from "./photogallery";
-// import Photogallery from "./photogallery";
 import Contact from "./contact";
 import Feedback from "./feedback";
 import data from "../data/images.json";

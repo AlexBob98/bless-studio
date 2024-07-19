@@ -21,10 +21,7 @@ class ImageGallery {
 
   updateGalleryHeight() {
     requestAnimationFrame(() => {
-      const currentPageImagesCount = Math.min(
-        this.itemsPerPage,
-        this.images.length - (this.currentPage - 1) * this.itemsPerPage
-      );
+      const currentPageImagesCount = Math.min(this.itemsPerPage, this.images.length - (this.currentPage - 1) * this.itemsPerPage);
       this.galleryElement.style.height = currentPageImagesCount >= 5 ? "" : "";
     });
   }
@@ -77,23 +74,18 @@ class ImageGallery {
 
     const addPageButton = (page) => {
       this.paginationElement.appendChild(
-        createButton(
-          page,
-          page === this.currentPage,
-          page === this.currentPage,
-          () => {
-            if (this.currentPage !== page) {
-              this.currentPage = page;
-              localStorage.setItem("currentPage", page);
-              this.renderGallery();
-              this.renderPagination();
-              this.galleryElement.scrollIntoView({
-                behavior: "smooth",
-                block: "center",
-              });
-            }
+        createButton(page, page === this.currentPage, page === this.currentPage, () => {
+          if (this.currentPage !== page) {
+            this.currentPage = page;
+            localStorage.setItem("currentPage", page);
+            this.renderGallery();
+            this.renderPagination();
+            this.galleryElement.scrollIntoView({
+              behavior: "smooth",
+              block: "center"
+            });
           }
-        )
+        })
       );
     };
 
@@ -106,7 +98,7 @@ class ImageGallery {
           this.renderPagination();
           this.galleryElement.scrollIntoView({
             behavior: "smooth",
-            block: "center",
+            block: "center"
           });
         })
       );
@@ -120,9 +112,7 @@ class ImageGallery {
       if (this.currentPage > 2) {
         addPageButton(1);
         if (this.currentPage > 3) {
-          this.paginationElement.appendChild(
-            createButton("...", false, true, null)
-          );
+          this.paginationElement.appendChild(createButton("...", false, true, null));
         }
       }
 
@@ -135,9 +125,7 @@ class ImageGallery {
 
       if (this.currentPage < this.totalPages - 2) {
         if (this.currentPage < this.totalPages - 3) {
-          this.paginationElement.appendChild(
-            createButton("...", false, true, null)
-          );
+          this.paginationElement.appendChild(createButton("...", false, true, null));
         }
         addPageButton(this.totalPages);
       }
@@ -152,7 +140,7 @@ class ImageGallery {
           this.renderPagination();
           this.galleryElement.scrollIntoView({
             behavior: "smooth",
-            block: "center",
+            block: "center"
           });
         })
       );
