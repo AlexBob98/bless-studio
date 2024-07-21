@@ -20,7 +20,7 @@
     "alt": "Bless Studio Audi"
   },
   {
-    "img": "./images/photogallery/6.jpg",
+    "img": "./images/photogallery/9.jpg",
     "alt": "Bless Studio Geely"
   },
   {
@@ -30,6 +30,10 @@
   {
     "img": "./images/photogallery/8.jpg",
     "alt": "Bless Studio Audi"
+  },
+  {
+    "img": "./images/photogallery/6.jpg",
+    "alt": "Bless Studio Mercedes"
   },
   {
     "img": "./images/photogallery/10.jpg",
@@ -45,67 +49,26 @@
   },
   {
     "img": "./images/photogallery/15.jpg",
-    "alt": "Bless Studio Voyah"
+    "alt": "Bless Studio Changhan"
   },
   {
     "img": "./images/photogallery/16.jpg",
-    "alt": "Bless Studio Voyah"
+    "alt": "Bless Studio Tank"
   },
   {
     "img": "./images/photogallery/17.jpg",
-    "alt": "Bless Studio Voyah"
+    "alt": "Bless Studio Toyota"
   },
   {
     "img": "./images/photogallery/18.jpg",
-    "alt": "Bless Studio Voyah"
+    "alt": "Bless Studio Lixiang"
   },
   {
-    "img": "./images/photogallery/13.jpg",
-    "alt": "Bless Studio Voyah"
+    "img": "./images/photogallery/19.jpg",
+    "alt": "Bless Studio Toyota"
   },
   {
-    "img": "./images/photogallery/13.jpg",
-    "alt": "Bless Studio Voyah"
-  },
-  {
-    "img": "./images/photogallery/13.jpg",
-    "alt": "Bless Studio Voyah"
-  },
-  {
-    "img": "./images/photogallery/13.jpg",
-    "alt": "Bless Studio Voyah"
-  },
-  {
-    "img": "./images/photogallery/13.jpg",
-    "alt": "Bless Studio Voyah"
-  },
-  {
-    "img": "./images/photogallery/13.jpg",
-    "alt": "Bless Studio Voyah"
-  },
-  {
-    "img": "./images/photogallery/13.jpg",
-    "alt": "Bless Studio Voyah"
-  },
-  {
-    "img": "./images/photogallery/13.jpg",
-    "alt": "Bless Studio Voyah"
-  },
-  {
-    "img": "./images/photogallery/13.jpg",
-    "alt": "Bless Studio Voyah"
-  },
-  {
-    "img": "./images/photogallery/13.jpg",
-    "alt": "Bless Studio Voyah"
-  },
-  {
-    "img": "./images/photogallery/13.jpg",
-    "alt": "Bless Studio Voyah"
-  },
-  {
-    "img": "./images/photogallery/13.jpg",
-    "alt": "Bless Studio Voyah"
+    "img": "./images/photogallery/20.jpg",
+    "alt": "Bless Studio Exeed"
   }
-  
 ]
